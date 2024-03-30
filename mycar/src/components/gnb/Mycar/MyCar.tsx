@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Footer from "../../common/footer";
+import Service1 from "./ServiceList/Service1";
+import Service2 from "./ServiceList/Service2";
+import Service3 from "./ServiceList/Service3";
+import ServiceSequence from "./ServiceList/ServiceSequence";
 
 const MyCar = () => {
   return (
@@ -9,10 +13,12 @@ const MyCar = () => {
         <ImageBox>
           <BoxTitle>서비스안내</BoxTitle>
         </ImageBox>
-        <Section>내용1</Section>
-        <Section>내용2</Section>
-        <Section>내용3</Section>
-        <Section>내용4</Section>
+        <Section>
+          <Service1 />
+          <Service2 />
+          <Service3 />
+        </Section>
+        <ServiceSequence />
       </Main>
       <Footer />
     </>
@@ -36,8 +42,12 @@ const BoxTitle = styled.div`
 `;
 
 const Section = styled.div`
-  width: 82%;
-  height: 10rem;
-  border: 1px solid black;
+  width: 64%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
 `;
+
 export default MyCar;
