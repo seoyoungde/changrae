@@ -31,7 +31,7 @@ const CRMain = () => {
           <Box
             sx={{
               width: "100%",
-              height: "60vh;",
+              height: "auto;",
               display: "flex",
               flexDirection: "row",
             }}
@@ -87,19 +87,19 @@ const CRMain = () => {
               <TabPanel value="1" sx={{ width: "78%" }}>
                 <CRIntro />
               </TabPanel>
-              <TabPanel value="2">
+              <TabPanel value="2" sx={{ width: "78%" }}>
                 <CRCeo />
               </TabPanel>
-              <TabPanel value="3">
+              <TabPanel value="3" sx={{ width: "78%" }}>
                 <CRBusiness />
               </TabPanel>
-              <TabPanel value="4">
+              <TabPanel value="4" sx={{ width: "78%" }}>
                 <CRService />
               </TabPanel>
-              <TabPanel value="5">
+              <TabPanel value="5" sx={{ width: "78%" }}>
                 <CRCibi />
               </TabPanel>
-              <TabPanel value="6">
+              <TabPanel value="6" sx={{ width: "78%" }}>
                 <CRHistory />
               </TabPanel>
             </TabContext>
@@ -140,7 +140,7 @@ const BoxTitle = styled.div`
 const Section = styled.div`
   margin-top: 10rem;
   width: 100%;
-  height: 200vh;
+  height: auto;
 `;
 
 export default CRMain;

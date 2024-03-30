@@ -98,6 +98,7 @@ const ContentSubTitle = styled.div`
 `;
 const ContentSubContent = styled.div`
   font-size: 1rem;
+  line-height: 25px;
 `;
 const ContentImage = styled.div`
   width: 46%;
