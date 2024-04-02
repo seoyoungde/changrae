@@ -17,6 +17,7 @@ const Csc = () => {
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
+
   return (
     <>
       <Main>
@@ -26,16 +27,53 @@ const Csc = () => {
         <Section>
           <Box sx={{ width: "100%", typography: "body1" }}>
             <TabContext value={value}>
-              <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-                <TabList
+              <Box
+                sx={{
+                  borderBottom: 1,
+                  borderColor: "divider",
+                }}
+              >
+                <StyledTabList
                   onChange={handleChange}
                   aria-label="lab API tabs example"
                 >
-                  <Tab label="공지사항" value="1" />
-                  <Tab label="자주묻는질문" value="2" />
-                  <Tab label="문의하기" value="3" />
-                  <Tab label="투자문의" value="4" />
-                </TabList>
+                  <StyledTab
+                    label="공지사항"
+                    value="1"
+                    sx={{
+                      fontSize: "1.3rem",
+                      marginRight: "4.9rem",
+                      marginLeft: "4.9rem",
+                    }}
+                  />
+                  <StyledTab
+                    label="자주묻는질문"
+                    value="2"
+                    sx={{
+                      fontSize: "1.3rem",
+                      marginRight: "4.9rem",
+                      marginLeft: "4.9rem",
+                    }}
+                  />
+                  <StyledTab
+                    label="문의하기"
+                    value="3"
+                    sx={{
+                      fontSize: "1.3rem",
+                      marginRight: "4.9rem",
+                      marginLeft: "4.9rem",
+                    }}
+                  />
+                  <StyledTab
+                    label="투자문의"
+                    value="4"
+                    sx={{
+                      fontSize: "1.3rem",
+                      marginRight: "4.9rem",
+                      marginLeft: "4.9rem",
+                    }}
+                  />
+                </StyledTabList>
               </Box>
               <TabPanel value="1">
                 <CscNotice />
@@ -57,6 +95,7 @@ const Csc = () => {
     </>
   );
 };
+
 const Main = styled.div`
   display: flex;
   flex-direction: column;
@@ -80,7 +119,22 @@ const BoxTitle = styled.div`
   padding-left: 1%;
 `;
 const Section = styled.div`
-  width: 82%;
-  height: 30rem;
+  width: 64%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
 `;
+
+const StyledTabList = styled(TabList)`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const StyledTab = styled(Tab)`
+  min-width: 0;
+  color: #bababa;
+`;
+
 export default Csc;

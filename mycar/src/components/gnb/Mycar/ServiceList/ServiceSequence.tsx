@@ -5,23 +5,66 @@ const ServiceSequence = () => {
   return (
     <>
       <Section>
-        <MycarSequence>
-          <SequenceContainer>
-            <Title>
-              <h1>마이카 서비스 이렇게 진행해요</h1>
-            </Title>
-            <SequencesBox>
-              <Sequence1>1</Sequence1>
-              <Sequence2>2</Sequence2>
+        <SequenceContainer>
+          <Title>
+            <h1>마이카 서비스 이렇게 진행해요</h1>
+          </Title>
+          <SequencesBox>
+            <Sequence>
+              <Image imageUrl="https://i.postimg.cc/d1ct4Wvc/Group-331.png"></Image>
+              <ImageTitle>
+                <h2>비슷한 사고사례 검색</h2>
+              </ImageTitle>
+              <IconSubtitle>
+                <p>고객님의 차량과 비슷한 사고사례</p>
+                <p>검색을 빠르게 도와드립니다</p>
+              </IconSubtitle>
+            </Sequence>
+            <Sequence>
+              <Image imageUrl="https://i.postimg.cc/sgcNnmWG/free-icon-check-box-60726-1.png"></Image>
+              <ImageTitle>
+                <h2>적절한 공업사 찾아 예약하기</h2>
+              </ImageTitle>
+              <IconSubtitle>
+                <p>후기와 별점, 가격등 다양한 정보를 바탕으로</p>
+                <p>원하는 공업사 예약을 도와드립니다</p>
+              </IconSubtitle>
+            </Sequence>
 
-              <Sequence3>3</Sequence3>
+            <Sequence>
+              <Image imageUrl="https://i.postimg.cc/5NfG8DYW/image-29.png"></Image>
+              <ImageTitle>
+                <h2>엄선된 공업사에 차량 입고</h2>
+              </ImageTitle>
+              <IconSubtitle>
+                <p>직접 기술과 실력을 검증한</p>
+                <p>1,2급 공업사에서 수리합니다</p>
+              </IconSubtitle>
+            </Sequence>
 
-              <Sequence4>4</Sequence4>
+            <Sequence>
+              <Image imageUrl="https://i.postimg.cc/X7QCvy66/image-30.png"></Image>
+              <ImageTitle>
+                <h2>수리 과정 실시간 리프팅</h2>
+              </ImageTitle>
+              <IconSubtitle>
+                <p>맡기신 차량의 수리 진행 과정을</p>
+                <p>투명하게 실시간으로 안내드립니다</p>
+              </IconSubtitle>
+            </Sequence>
 
-              <Sequence5>5</Sequence5>
-            </SequencesBox>
-          </SequenceContainer>
-        </MycarSequence>
+            <Sequence>
+              <Image imageUrl="https://i.postimg.cc/gcR9dvRr/free-icon-reviews-5182755-1.png"></Image>
+              <ImageTitle>
+                <h2>차량 출고 후 후기작성</h2>
+              </ImageTitle>
+              <IconSubtitle>
+                <p>맡기신 차량의 수리가 끝난 후</p>
+                <p>출고 후 마이카 후기 작성 안내를 도와드립니다</p>
+              </IconSubtitle>
+            </Sequence>
+          </SequencesBox>
+        </SequenceContainer>
       </Section>
     </>
   );
@@ -29,56 +72,56 @@ const ServiceSequence = () => {
 
 const Section = styled.div`
   width: 100%;
-  height: 80vh;
+  min-height: 60vh;
   background-color: #f6f9ff;
-  margin-top: 14rem;
+  padding: 5vh 0;
+  margin-top: 14vw;
 `;
 
-const MycarSequence = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-`;
 const SequenceContainer = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: auto;
+  margin-top: 4.5rem;
 `;
+
 const Title = styled.div`
-  font-size: 1.5rem;
-  margin-bottom: 5.5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: calc(1.2vw + 0.3rem);
 `;
+
 const SequencesBox = styled.div`
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
+  flex-wrap: wrap;
   justify-content: space-between;
 `;
-const Sequence1 = styled.div`
-  width: 18%;
-  height: 37vh;
-  background-color: pink;
+
+const Sequence = styled.div`
+  width: 15%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
 `;
-const Sequence2 = styled.div`
-  width: 18%;
-  height: 37vh;
-  background-color: green;
+
+const Image = styled.div<{ imageUrl: string }>`
+  width: 100%;
+  height: 10vh;
+  background-image: url(${(props) => props.imageUrl});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
-const Sequence3 = styled.div`
-  width: 18%;
-  height: 37vh;
-  background-color: yellow;
+
+const ImageTitle = styled.div`
+  margin-top: 1rem;
+  font-size: 0.9rem;
 `;
-const Sequence4 = styled.div`
-  width: 18%;
-  height: 37vh;
-  background-color: red;
+
+const IconSubtitle = styled.div`
+  margin-top: 1rem;
+  font-size: 0.8rem;
 `;
-const Sequence5 = styled.div`
-  width: 18%;
-  height: 37vh;
-  background-color: blue;
-`;
+
 export default ServiceSequence;

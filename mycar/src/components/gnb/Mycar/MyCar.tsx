@@ -5,6 +5,7 @@ import Service1 from "./ServiceList/Service1";
 import Service2 from "./ServiceList/Service2";
 import Service3 from "./ServiceList/Service3";
 import ServiceSequence from "./ServiceList/ServiceSequence";
+import ServiceReview from "./ServiceList/ServiceReview";
 
 const MyCar = () => {
   return (
@@ -19,6 +20,9 @@ const MyCar = () => {
           <Service3 />
         </Section>
         <ServiceSequence />
+        <Section>
+          <ServiceReview />
+        </Section>
       </Main>
       <Footer />
     </>
@@ -35,7 +39,8 @@ const ImageBox = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("https://i.postimg.cc/4yYxdpgK/456-3.png");
+  background-image: url("https://i.postimg.cc/zfCmpm1w/Group-1000002474-1.png");
+  margin-bottom: 10vw;
 `;
 const BoxTitle = styled.div`
   color: white;
@@ -47,7 +52,7 @@ const Section = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 1rem;
 `;
 
 export default MyCar;

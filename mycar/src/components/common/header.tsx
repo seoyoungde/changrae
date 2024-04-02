@@ -13,7 +13,14 @@ const Header = () => {
           <Grid xs={1}></Grid>
           <Grid xs={10} sx={{ height: "7vh" }}>
             <HeaderStyle>
-              <LogoStyle>일급마이카</LogoStyle>
+              <LogoStyle
+                className="mainpage"
+                onClick={() => {
+                  navigate("/mainpage");
+                }}
+              >
+                일급마이카
+              </LogoStyle>
               <NavBox>
                 <NavStyle
                   className="crmainpage"
@@ -75,7 +82,7 @@ const LogoStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
   @media screen and (max-width: 800px) {
     font-size: 1rem;
   }

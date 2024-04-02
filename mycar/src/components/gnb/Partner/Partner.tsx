@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 import { Button, TextField } from "@mui/material";
 import Footer from "../../common/footer";
@@ -7,7 +7,7 @@ const Partner = () => {
   return (
     <>
       <Main>
-        <ImageBox>
+        <ImageBox aria-label="파트너사">
           <BoxTitle>파트너사</BoxTitle>
         </ImageBox>
         <NumberBox>
@@ -18,17 +18,13 @@ const Partner = () => {
         </NumberBox>
         <Section>
           <Line>
-            <h1 style={{ fontSize: "1.5rem" }}>입점상담신청하기</h1>
+            <h1>입점상담신청하기</h1>
           </Line>
           <Form>
             <InputField label="업체명" variant="outlined" />
             <InputField label="업체 주소지" variant="outlined" />
             <InputField label="휴대전화번호" variant="outlined" />
-            <ApplyButton
-              variant="contained"
-              color="primary"
-              sx={{ fontSize: "1.1rem", fontWeight: "bold" }}
-            >
+            <ApplyButton variant="contained" color="primary">
               입점상담신청하기
             </ApplyButton>
           </Form>
@@ -83,18 +79,10 @@ const PartnerLabel = styled.div`
   color: #999999;
   font-weight: 700;
   margin-right: 0.5rem;
-
-  @media screen and (max-width: 800px) {
-    font-size: 1rem;
-  }
 `;
 const PartnerCount = styled.div`
   color: #123160;
   font-weight: 700;
-
-  @media screen and (max-width: 800px) {
-    font-size: 1rem;
-  }
 `;
 const Section = styled.div`
   width: 30%;
@@ -102,6 +90,8 @@ const Section = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+   @media screen and (max-width: 768px) {
+    width: 100%;
 `;
 const Line = styled.div`
   width: 130%;
@@ -115,7 +105,6 @@ const InputField = styled(TextField)`
     margin-bottom: 0.8rem;
   }
 `;
-
 const ApplyButton = styled(Button)`
   && {
     width: 100%;
