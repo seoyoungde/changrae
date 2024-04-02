@@ -56,11 +56,16 @@ const Section = styled.div`
   width: 85%;
   height: auto;
   margin: auto;
+  @media (min-width: 768px) {
+    padding: 0 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 3rem;
+  }
 `;
 
 const CompanyBox = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin-bottom: 12rem;
 `;

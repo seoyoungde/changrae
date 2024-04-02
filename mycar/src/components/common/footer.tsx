@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <FooterContainer>
       <PolicyLinks>
-        <PolicyLink>이용약관</PolicyLink>
-        <PolicyLink>개인정보처리방침</PolicyLink>
-        <PolicyLink>저작권 보호정책</PolicyLink>
-        <PolicyLink>사이버감사실</PolicyLink>
-        <PolicyLink>전체메뉴보기</PolicyLink>
+        <PolicyLink href="#">이용약관</PolicyLink>
+        <PolicyLink href="#">개인정보처리방침</PolicyLink>
+        <PolicyLink href="#">저작권 보호정책</PolicyLink>
+        <PolicyLink href="#">사이버감사실</PolicyLink>
+        <PolicyLink href="#">전체메뉴보기</PolicyLink>
       </PolicyLinks>
       <FooterContent>
         <FooterIntro>
@@ -18,20 +18,20 @@ const Footer = () => {
             <Intro>경기도시흥시 지식산업센터907</Intro>
             <Intro>Tel : 032 1201-7823</Intro>
             <Copyright>
-              COPYRIGHT2014c INCHEMON FREE ECONOMIC ZONE AUTORITY
+              COPYRIGHT 2014c INCHEMON FREE ECONOMIC ZONE AUTORITY
             </Copyright>
           </Address>
         </FooterIntro>
         <ContactInfo>
           <ContactImage>
-            <a href="링크주소">
+            <a href="#" role="link">
               <img
                 src="https://i.postimg.cc/vTDmC7sz/v982-d3-04.jpg"
                 alt="contact-image"
                 style={{ width: "40px", height: "auto" }}
               ></img>
             </a>
-            <a href="링크주소">
+            <a href="#" role="link">
               {" "}
               <img
                 src="https://i.postimg.cc/hv7B92nH/10464410.png"
@@ -40,7 +40,6 @@ const Footer = () => {
               ></img>
             </a>
           </ContactImage>
-
           <ContactNumber>고객센터: 010 9893 3392</ContactNumber>
         </ContactInfo>
       </FooterContent>
@@ -65,8 +64,10 @@ const PolicyLinks = styled.div`
   color: #7e7e7e;
 `;
 
-const PolicyLink = styled.p``;
-
+const PolicyLink = styled.a`
+  text-decoration: none;
+  color: black;
+`;
 const FooterContent = styled.div`
   display: flex;
   flex-direction: row;
@@ -90,7 +91,7 @@ const Logo = styled.div`
 const Address = styled.div`
   display: flex;
   flex-direction: column;
-  width: 22rem;
+  width: 25rem;
 `;
 
 const Intro = styled.div`

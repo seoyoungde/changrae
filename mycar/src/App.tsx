@@ -21,7 +21,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/main" element={<MainPage />}></Route>
+          <Route path="" element={<MainPage />}></Route>
+          <Route path="/mainpage" element={<MainPage />}></Route>
           <Route path="/crmainpage" element={<CRMainPage />}></Route>
           <Route path="/mycarpage" element={<MyCarPage />}></Route>
           <Route path="/cscpage" element={<CscPage />}></Route>

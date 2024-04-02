@@ -9,102 +9,96 @@ const CRHistory = () => {
         지금까지, 더 나은 자동차 에프터 마켓 서비스 제공을 위해 걸어온 길
       </HistorySubTitle>
 
-      <HistoryBox>
-        <HistoryYear>2023</HistoryYear>
-        <ContainerBox>
-          <HistoryContainer>
+      <YearlyHistory>
+        <Year>2023</Year>
+        <HistoryContent>
+          <HistoryItem>
             <HistoryMonth>02</HistoryMonth>
             <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
-          </HistoryContainer>
-          <HistoryContainer>
-            <HistoryMonth>03</HistoryMonth>
-            <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
-          </HistoryContainer>
-          <HistoryContainer>
-            <HistoryMonth>04</HistoryMonth>
-            <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
-          </HistoryContainer>
-        </ContainerBox>
-      </HistoryBox>
-      <HistoryBox>
-        <HistoryYear>2023</HistoryYear>
-        <ContainerBox>
-          <HistoryContainer>
+          </HistoryItem>
+          <HistoryItem>
             <HistoryMonth>02</HistoryMonth>
             <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
-          </HistoryContainer>
-          <HistoryContainer>
-            <HistoryMonth>03</HistoryMonth>
+          </HistoryItem>
+          <HistoryItem>
+            <HistoryMonth>02</HistoryMonth>
             <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
-          </HistoryContainer>
-          <HistoryContainer>
-            <HistoryMonth>04</HistoryMonth>
+          </HistoryItem>
+        </HistoryContent>
+      </YearlyHistory>
+
+      <YearlyHistory>
+        <Year>2023</Year>
+        <HistoryContent>
+          <HistoryItem>
+            <HistoryMonth>02</HistoryMonth>
             <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
-          </HistoryContainer>
-        </ContainerBox>
-      </HistoryBox>
+          </HistoryItem>
+          <HistoryItem>
+            <HistoryMonth>02</HistoryMonth>
+            <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
+          </HistoryItem>
+          <HistoryItem>
+            <HistoryMonth>02</HistoryMonth>
+            <HistoryContent>누적 다운로드 수 200만 달성</HistoryContent>
+          </HistoryItem>
+        </HistoryContent>
+      </YearlyHistory>
     </Section>
   );
 };
 
 const Section = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 85%;
-  height: auto;
   margin: auto;
 `;
 
 const HistoryTitle = styled.div`
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 4.3rem;
+  margin-bottom: 2rem;
 `;
 
 const HistorySubTitle = styled.div`
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 `;
 
-const HistoryBox = styled.div`
+const YearlyHistory = styled.div`
   border-top: 1px solid #c9c9c9;
   border-bottom: 1px solid #c9c9c9;
-  width: 100%;
-  height: 35vh;
+  margin-bottom: 2rem;
+  height: auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 `;
 
-const HistoryYear = styled.div`
-  font-size: 1rem;
+const Year = styled.div`
+  font-size: 1.5rem;
   font-weight: 400;
-  margin-right: 10rem;
-  margin-top: 2.5rem;
-  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 `;
 
-const ContainerBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-`;
-
-const HistoryContainer = styled.div`
+const HistoryItem = styled.div`
   display: flex;
   border-bottom: 1px solid #d2d2d2;
-  width: 90%;
-  height: 60%;
   align-items: center;
+
+  margin-top: 3rem;
 `;
 
 const HistoryMonth = styled.div`
-  margin-right: 25rem;
+  margin-right: 2rem;
   font-size: 1rem;
+  margin-right: 15rem;
+  margin-bottom: 2rem;
 `;
 
 const HistoryContent = styled.div`
   font-size: 0.9rem;
+  width: 70%;
+  margin-bottom: 2rem;
 `;
 
 export default CRHistory;
