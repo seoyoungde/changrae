@@ -135,6 +135,7 @@ const StyledTabList = styled(TabList)`
 const StyledTab = styled(Tab)`
   min-width: 0;
   color: #bababa;
+  font-weight:800;
 `;
 
 export default Csc;

@@ -50,7 +50,7 @@ const CRMain = () => {
                   aria-label="lab API tabs example"
                 >
                   <Tab
-                    label=")주*창래소개"
+                    label="(주)창래소개"
                     value="1"
                     sx={{
                       marginBottom: "3rem;",
@@ -73,7 +73,7 @@ const CRMain = () => {
                     sx={{ marginBottom: "3rem;", fontSize: "1.1rem;" }}
                   />
                   <Tab
-                    label="DJ / CJ"
+                    label="CI / BI"
                     value="5"
                     sx={{ marginBottom: "3rem;", fontSize: "1.1rem;" }}
                   />
