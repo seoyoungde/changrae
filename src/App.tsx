@@ -21,7 +21,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/mycar" element={<MainPage />}></Route>
+          <Route path="/changrae" element={<MainPage />}></Route>
           <Route path="/mainpage" element={<MainPage />}></Route>
           <Route path="/crmainpage" element={<CRMainPage />}></Route>
           <Route path="/mycarpage" element={<MyCarPage />}></Route>
