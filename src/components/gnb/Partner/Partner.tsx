@@ -45,7 +45,7 @@ const Main = styled.div`
 `;
 const ImageBox = styled.div`
   width: 100%;
-  height: 64.2vh;
+  height: 34vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

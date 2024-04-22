@@ -21,9 +21,7 @@ const Csc = () => {
   return (
     <>
       <Main>
-        <ImageBox>
-          <BoxTitle>고객센터</BoxTitle>
-        </ImageBox>
+        <ImageBox></ImageBox>
         <Section>
           <Box sx={{ width: "100%", typography: "body1" }}>
             <TabContext value={value}>
@@ -107,17 +105,9 @@ const ImageBox = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("https://i.postimg.cc/Vvc71ZCF/789.png");
+  background-image: url("https://i.postimg.cc/tRDTHsq1/Group-1000002679.png");
 `;
-const BoxTitle = styled.div`
-  color: white;
-  font-size: 3.2rem;
-  font-weight: 800;
-  margin-left: 18%;
-  margin-top: 3%;
-  border-left: 5px solid white;
-  padding-left: 1%;
-`;
+
 const Section = styled.div`
   width: 64%;
   height: auto;
@@ -135,7 +125,7 @@ const StyledTabList = styled(TabList)`
 const StyledTab = styled(Tab)`
   min-width: 0;
   color: #bababa;
-  font-weight:800;
+  font-weight: 800;
 `;
 
 export default Csc;

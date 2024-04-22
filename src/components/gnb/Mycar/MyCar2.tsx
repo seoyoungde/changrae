@@ -2,7 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 import Footer from "../../common/footer";
 import Service1 from "./ServiceList/Service1";
-import Service4 from "./ServiceList/Service4";
+import Service2 from "./ServiceList/Service2";
+import Service3 from "./ServiceList/Service3";
 import ServiceSequence from "./ServiceList/ServiceSequence";
 import ServiceReview from "./ServiceList/ServiceReview";
 
@@ -11,23 +12,17 @@ const MyCar2 = () => {
     <>
       <Main>
         <ImageBox>
-          <TextBox>
-            <h1>
-              <HighlightedText>One-stop</HighlightedText> 사고수리
-            </h1>
-            <h1>일급마이카를 만나면 해결</h1>
-            <h1>
-              수리비용 <HighlightedText>앞자리가</HighlightedText> 바뀝니다
-            </h1>
-          </TextBox>
+          <BoxTitle>서비스안내</BoxTitle>
         </ImageBox>
         <Section>
-          <Service4 />
           <Service1 />
+          <Service2 />
+          <Service3 />
         </Section>
         <ServiceSequence />
-
-        <ServiceReview />
+        <Section>
+          <ServiceReview />
+        </Section>
       </Main>
       <Footer />
     </>
@@ -44,9 +39,11 @@ const ImageBox = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("https://i.postimg.cc/rs6rHNrt/Group-1000002681-1.png");
+  background-image: url("https://i.postimg.cc/zfCmpm1w/Group-1000002474-1.png");
   margin-bottom: 10vw;
-  font-size: 1.2rem;
+`;
+const BoxTitle = styled.div`
+  color: white;
 `;
 
 const Section = styled.div`
@@ -57,15 +54,5 @@ const Section = styled.div`
   flex-direction: column;
   margin-top: 1rem;
 `;
-const HighlightedText = styled.span`
-  font-weight: 900;
-  font-size: 3rem;
-  color: #2086ff;
-`;
-const TextBox = styled.div`
-  width: 64%;
-  margin: auto;
-  margin-top: 6rem;
-  letter-spacing: 2px;
-`;
+
 export default MyCar2;

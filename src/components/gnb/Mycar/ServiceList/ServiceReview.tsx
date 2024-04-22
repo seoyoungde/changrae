@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Rating } from "@mui/material";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const reviews = [
   {
@@ -57,17 +58,17 @@ const ServiceReview = () => {
   return (
     <Section>
       <Container>
-        <Title>고객후기</Title>
-        <SubTitle>고객분들이 직접 작성한 이용후기 245건</SubTitle>
+        <Title style={{ marginBottom: "-1rem" }}>
+          사고수리 100% 리얼 고객 이용 후기
+        </Title>
+        <Title>지금 확인 못하시면 손해봅니다</Title>
+
         <ReviewContainer>
+          <FaAngleLeft size="50" style={{ margin: "auto" }} />
           {reviews.map((review, index) => (
             <ReviewBox key={index}>
               <Image imageUrl={review.imageUrl} />
               <TextBox>
-                <CarIntro>{review.carIntro}</CarIntro>
-                <CarIntro2>{review.oilInfo}</CarIntro2>
-                <Content>{review.content}</Content>
-                <Cal>{review.date}</Cal>
                 <Rating
                   name="read-only"
                   value={review.rating}
@@ -78,9 +79,13 @@ const ServiceReview = () => {
                     marginTop: "0.6rem",
                   }}
                 />
+                <CarIntro>{review.carIntro}</CarIntro>
+                <CarIntro2>{review.oilInfo}</CarIntro2>
+                <Content>{review.content}</Content>
               </TextBox>
             </ReviewBox>
           ))}
+          <FaAngleRight size="50" style={{ margin: "auto" }} />
         </ReviewContainer>
       </Container>
     </Section>
@@ -106,21 +111,16 @@ const Title = styled.h1`
   font-size: 2.7vw;
 `;
 
-const SubTitle = styled.div`
-  font-size: 0.9rem;
-  margin-bottom: 5.5rem;
-  color: #7c7c7c;
-`;
-
 const ReviewContainer = styled.div`
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 4rem;
 `;
 
 const ReviewBox = styled.div`
-  width: 20vw;
+  width: 14.7vw;
+  margin-left: 0.5rem;
   margin-bottom: 2vw;
 `;
 

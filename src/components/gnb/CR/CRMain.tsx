@@ -121,7 +121,7 @@ const Main = styled.div`
 `;
 const ImageBox = styled.div`
   width: 100%;
-  height: 64.2vh;
+  height: 34vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,7 +139,7 @@ const BoxTitle = styled.div`
 
 const Section = styled.div`
   margin-top: 10rem;
-  width: 100%;
+  width: 68%;
   height: auto;
 `;
 
