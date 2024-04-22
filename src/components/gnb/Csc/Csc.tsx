@@ -105,7 +105,7 @@ const Main = styled.div`
 const ImageBox = styled.div`
   width: 100%;
   height: 34vh;
-  background-size: contain;
+  background-size: fit;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("https://i.postimg.cc/zvHLKCdz/Group-1000002682.png");
