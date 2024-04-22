@@ -69,7 +69,7 @@ const BiBox = styled.div`
 `;
 
 const CiTitle = styled.h4`
-  margin-right: 9rem;
+  margin-right: 7rem;
   font-size: 1.2rem;
   font-weight: 500;
 `;
@@ -100,8 +100,9 @@ const CiEn = styled.p`
   font-weight: 800;
   color: #0070c0;
 `;
+
 const BiTitle = styled.h4`
-  margin-right: 9rem;
+  margin-right: 7rem;
   font-size: 1.2rem;
   font-weight: 500;
 `;

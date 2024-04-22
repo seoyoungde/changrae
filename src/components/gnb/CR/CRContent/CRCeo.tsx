@@ -46,8 +46,8 @@ const CeoTitle = styled.div`
   margin-bottom: 4.3rem;
 `;
 const CeoImage = styled.div`
-  width: 30%;
-  height: 45vh;
+  width: 40%;
+  height: 39vh;
   background-color: #d9d9d9;
   margin-bottom: 4.3rem;
 `;

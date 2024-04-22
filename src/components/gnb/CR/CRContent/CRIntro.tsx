@@ -53,7 +53,7 @@ const CRIntro = () => {
 const Section = styled.div`
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 100%;
   height: auto;
   margin: auto;
   @media (min-width: 768px) {
@@ -84,7 +84,7 @@ const BoxContent = styled.div`
 const ContentLetter = styled.div`
   display: flex;
   flex-direction: column;
-  width: 38%;
+  width: 44%;
 `;
 const ContentTitle = styled.div`
   font-size: 1.5rem;
@@ -106,8 +106,8 @@ const ContentSubContent = styled.div`
   line-height: 25px;
 `;
 const ContentImage = styled.div`
-  width: 46%;
-  height: 48vh;
+  width: 44%;
+  height: 42vh;
   background-size: fit;
   background-repeat: no-repeat;
   background-position: center;
@@ -117,7 +117,7 @@ const ContentImage = styled.div`
 const CompanyBox2 = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
 
   margin-bottom: 4.1rem;
 `;
