@@ -21,7 +21,10 @@ const Csc = () => {
   return (
     <>
       <Main>
-        <ImageBox></ImageBox>
+        <ImageBox>
+          <BoxTitle>고객센터</BoxTitle>
+        </ImageBox>
+
         <Section>
           <Box sx={{ width: "100%", typography: "body1" }}>
             <TabContext value={value}>
@@ -101,11 +104,20 @@ const Main = styled.div`
 `;
 const ImageBox = styled.div`
   width: 100%;
-  height: 64.2vh;
-  background-size: cover;
+  height: 34vh;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("https://i.postimg.cc/tRDTHsq1/Group-1000002679.png");
+  background-image: url("https://i.postimg.cc/zvHLKCdz/Group-1000002682.png");
+`;
+const BoxTitle = styled.div`
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-left: 18%;
+  margin-top: 3%;
+  border-left: 5px solid white;
+  padding-left: 1%;
 `;
 
 const Section = styled.div`
