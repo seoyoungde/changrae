@@ -12,11 +12,11 @@ const MyCar2 = () => {
       <Main>
         <ImageBox>
           <TextBox>
-            <h1>
+            <h1 style={{ fontWeight: "800" }}>
               <HighlightedText>One-stop</HighlightedText> 사고수리
             </h1>
-            <h1>일급마이카를 만나면 해결</h1>
-            <h1>
+            <h1 style={{ fontWeight: "800" }}>일급마이카를 만나면 해결</h1>
+            <h1 style={{ fontWeight: "800" }}>
               수리비용 <HighlightedText>앞자리가</HighlightedText> 바뀝니다
             </h1>
           </TextBox>
@@ -44,7 +44,7 @@ const ImageBox = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("https://i.postimg.cc/rs6rHNrt/Group-1000002681-1.png");
+  background-image: url("https://i.postimg.cc/wxJL11nq/Group-1000002681-2.png");
   margin-bottom: 10vw;
   font-size: 1.2rem;
 `;
@@ -65,7 +65,7 @@ const HighlightedText = styled.span`
 const TextBox = styled.div`
   width: 64%;
   margin: auto;
-  margin-top: 6rem;
+  padding-top: 2px;
   letter-spacing: 2px;
 `;
 export default MyCar2;

@@ -8,7 +8,7 @@ const Service4 = () => {
       <Header>
         <HeaderTitle>
           <h1 style={{ marginBottom: "-1rem" }}>내 차 사고수리</h1>
-          <h1>사고 견적 받아보세요</h1>
+          <h1>사전 견적 받아보세요</h1>
         </HeaderTitle>
       </Header>
 
@@ -26,12 +26,14 @@ const Service4 = () => {
           <ServiceDescriptions>
             <Description>
               갑작스러운 사고 걱정하지 마세요.
-              <br /> 일급마이카 모바일 앱 접속,
+              <br /> 일급마이카 모바일 웹 접속,
               <br /> 사고부위 정보 등록만 하면 OK.
             </Description>
             <Description>
-              사고 주변 일급마이카 제휴 1급 공업사
-              <br /> 견적/예약을 one-stop으로 해결해 드릴게요.
+              사고 주변 일급마이카 <br />
+              제휴 1급 공업사 견적/예약을
+              <br />
+              one-stop으로 해결해 드릴게요.
             </Description>
           </ServiceDescriptions>
         </Details>
@@ -108,7 +110,7 @@ const Description = styled.div`
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 800;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 `;
 
 const Contact = styled.div`
