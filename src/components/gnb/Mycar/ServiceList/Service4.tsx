@@ -68,7 +68,7 @@ const Content = styled.div`
 
 const ImageContainer = styled.div`
   width: 30vw;
-  height: 32vh;
+  height: 36vh;
 `;
 
 const StyledImage = styled.div`
