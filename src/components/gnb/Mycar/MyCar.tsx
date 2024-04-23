@@ -12,10 +12,12 @@ const MyCar2 = () => {
       <Main>
         <ImageBox>
           <TextBox>
-            <h1 style={{ fontWeight: "800" }}>
+            <h1 style={{ fontWeight: "800", marginBottom: "-7px" }}>
               <HighlightedText>One-stop</HighlightedText> 사고수리
             </h1>
-            <h1 style={{ fontWeight: "800" }}>일급마이카를 만나면 해결</h1>
+            <h1 style={{ fontWeight: "800", marginBottom: "-9px" }}>
+              일급마이카를 만나면 해결
+            </h1>
             <h1 style={{ fontWeight: "800" }}>
               수리비용 <HighlightedText>앞자리가</HighlightedText> 바뀝니다
             </h1>
